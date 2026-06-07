@@ -1,0 +1,55 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-fica-yellow: #f3ff47;
+  --color-fica-black: #0a0a0a;
+  --color-fica-dark: #0b0b0b;
+  --color-fica-grey: #141414;
+  --color-fica-muted: #999999;
+  --color-fica-text: #e0e0e0;
+  --color-fica-hero: #fbf88e;
+  --font-clash: 'Clash Display', system-ui, sans-serif;
+  --font-pretendard: 'Pretendard', system-ui, sans-serif;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-pretendard);
+    letter-spacing: -2%;
+    background: #0a0a0a;
+    color: #e0e0e0;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@keyframes infinity-scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes circle-arrow-bounce {
+  0%,
+  100% {
+    transform: rotate(-90deg) translateY(0);
+  }
+  50% {
+    transform: rotate(-90deg) translateY(6px);
+  }
+}
+
+.animate-circle-arrow-bounce {
+  animation: circle-arrow-bounce 2s ease-in-out infinite;
+}
