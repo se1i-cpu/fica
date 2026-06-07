@@ -1,4 +1,6 @@
-const imgLogo = 'http://localhost:3845/assets/e30eeb7b9cea40caed5ae9bc19740bdfd969610e.svg'
+import imgLogo from '../../assets/exported/e30eeb7b9cea40caed5ae9bc19740bdfd969610e.svg'
+
+
 
 const designers = [
   { name: '한유경' },

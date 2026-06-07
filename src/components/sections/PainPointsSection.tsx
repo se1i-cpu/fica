@@ -1,10 +1,16 @@
+import imgArrowChevron100 from '../../assets/exported/730e34ebcc2354414dffe604e177b53eb345c0cb.svg'
+import imgArrowChevron30 from '../../assets/exported/2c3852847dcdf147f72843967eac502daabbbc60.svg'
+import imgArrowChevron60 from '../../assets/exported/341baeaa5e7341b57288250c06a5e6388e79f154.svg'
+import imgProfile1 from '../../assets/exported/8e0a5c9f3e572019d56f323890abd7ad0391672f.png'
+import imgProfile2 from '../../assets/exported/c7c1dd2e4635c72406050faf81ac1bd23ea8e506.png'
+
 import { useEffect, useRef, useState } from 'react'
 
-const imgProfile1 = 'http://localhost:3845/assets/8e0a5c9f3e572019d56f323890abd7ad0391672f.png'
-const imgProfile2 = 'http://localhost:3845/assets/c7c1dd2e4635c72406050faf81ac1bd23ea8e506.png'
-const imgArrowChevron30 = 'http://localhost:3845/assets/2c3852847dcdf147f72843967eac502daabbbc60.svg'
-const imgArrowChevron60 = 'http://localhost:3845/assets/341baeaa5e7341b57288250c06a5e6388e79f154.svg'
-const imgArrowChevron100 = 'http://localhost:3845/assets/730e34ebcc2354414dffe604e177b53eb345c0cb.svg'
+
+
+
+
+
 
 const arrowChevronAssets = {
   dim: imgArrowChevron30,

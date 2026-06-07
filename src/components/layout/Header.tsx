@@ -1,6 +1,8 @@
+import imgLogo from '../../assets/exported/68e3c4fa0b0dfd620e708b7fa44ea498008aff0c.svg'
+
 import { useEffect, useState } from 'react'
 
-const imgLogo = 'http://localhost:3845/assets/68e3c4fa0b0dfd620e708b7fa44ea498008aff0c.svg'
+
 
 const navItems = ['Video', 'Planning', 'Technique', 'Design', 'Service'] as const
 

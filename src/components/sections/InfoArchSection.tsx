@@ -1,4 +1,6 @@
-const imgArch = 'http://localhost:3845/assets/1be82525489f77c2218f5d0990e3587026b2c632.png'
+import imgArch from '../../assets/exported/1be82525489f77c2218f5d0990e3587026b2c632.png'
+
+
 
 export default function InfoArchSection() {
   return (

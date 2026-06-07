@@ -1,4 +1,6 @@
-const imgLogo = 'http://localhost:3845/assets/0497996e4f6b51f5fde66a44f44c8de038635700.svg'
+import imgLogo from '../../assets/exported/0497996e4f6b51f5fde66a44f44c8de038635700.svg'
+
+
 
 export default function CTASection() {
   return (

@@ -1,4 +1,6 @@
-const imgOnboarding = 'http://localhost:3845/assets/6b5ea6ea914f325edb595115b371013aae39c047.png'
+import imgOnboarding from '../../assets/exported/6b5ea6ea914f325edb595115b371013aae39c047.png'
+
+
 
 export default function OnboardingSection() {
   return (

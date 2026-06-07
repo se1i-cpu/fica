@@ -1,0 +1,20 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 1920 475" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Mask group">
+<mask id="mask0_3565_1505" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1920" height="475">
+<path id="Ellipse 237" d="M1920 475H0C0 235.308 437.307 0 967.5 0C1497.69 0 1920 235.308 1920 475Z" fill="url(#paint0_linear_3565_1505)"/>
+</mask>
+<g mask="url(#mask0_3565_1505)">
+<path id="Ellipse 238" opacity="0.5" d="M0.000480652 475.001H1920C1920 235.31 2142.69 0 1612.5 0L265 0.00114632C-265.193 0.00114632 0.000480652 235.31 0.000480652 475.001Z" fill="url(#paint1_linear_3565_1505)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_3565_1505" x1="927.5" y1="-1138.58" x2="927.5" y2="981.858" gradientUnits="userSpaceOnUse">
+<stop stop-color="#D9D9D9"/>
+<stop offset="0.7" stop-color="#D9D9D9" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear_3565_1505" x1="927.5" y1="0" x2="927.5" y2="981.858" gradientUnits="userSpaceOnUse">
+<stop stop-color="#D9D9D9"/>
+<stop offset="0.7" stop-color="#D9D9D9" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

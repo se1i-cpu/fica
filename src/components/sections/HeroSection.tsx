@@ -1,5 +1,8 @@
-const imgHero = 'http://localhost:3845/assets/a61c47915919955c5ca0c1b02c259b04049da27f.png'
-const imgLogo = 'http://localhost:3845/assets/212bb36dfbbdddd474202b2c63e5c29135d880de.svg'
+import imgHero from '../../assets/exported/a61c47915919955c5ca0c1b02c259b04049da27f.png'
+import imgLogo from '../../assets/exported/212bb36dfbbdddd474202b2c63e5c29135d880de.svg'
+
+
+
 
 export default function HeroSection() {
   return (

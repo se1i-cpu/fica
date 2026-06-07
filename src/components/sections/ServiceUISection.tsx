@@ -1,16 +1,19 @@
+import imgCommanderScreen from '../../assets/exported/19f7833a56f8916a65f7347d497dbfb462e5a600.png'
+import imgMemberScreen from '../../assets/exported/e521b33d2deb5531c6ab4e963c44ce0bad12a425.png'
+import imgOnboardingCamera from '../../assets/exported/9e932de3fbd7a9a9a1f45db4ac5b1619e5a1f192.png'
+import imgOnboardingLogin from '../../assets/exported/829c633d52af391295d69ce039f3b585a7756431.png'
+import imgOnboardingManual from '../../assets/exported/7f1a5360e3ed9f0d76a87d6da46465a4b7af5b12.png'
+import imgOnboardingVital from '../../assets/exported/afac788ca350c66893fa2670163ff69d43d44290.png'
+
 import { useState, type ReactNode } from 'react'
 
-const imgOnboardingLogin =
-  'http://localhost:3845/assets/829c633d52af391295d69ce039f3b585a7756431.png'
-const imgOnboardingCamera =
-  'http://localhost:3845/assets/9e932de3fbd7a9a9a1f45db4ac5b1619e5a1f192.png'
-const imgOnboardingManual =
-  'http://localhost:3845/assets/7f1a5360e3ed9f0d76a87d6da46465a4b7af5b12.png'
-const imgOnboardingVital =
-  'http://localhost:3845/assets/afac788ca350c66893fa2670163ff69d43d44290.png'
+
+
+
+
 const imgArrow = '/img/arrow.png'
-const imgMemberScreen = 'http://localhost:3845/assets/e521b33d2deb5531c6ab4e963c44ce0bad12a425.png'
-const imgCommanderScreen = 'http://localhost:3845/assets/19f7833a56f8916a65f7347d497dbfb462e5a600.png'
+
+
 
 const ONBOARDING_STEPS = [
   {

@@ -1,21 +1,21 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react'
 
-const imgCarousel1 = 'http://localhost:3845/assets/1d0385e1dcc79f4a760e719ad5bdd498f2c2db2e.png'
-const imgCarousel2 = 'http://localhost:3845/assets/8d5d1526c0c008d05b8008c16a892eb86cf3e650.png'
-const imgCarousel3 = 'http://localhost:3845/assets/f9221e89d8862840117c7d9471a03fb15b3eb842.png'
-const imgCarousel4 = 'http://localhost:3845/assets/66ef54b8472ebd5484b206439146434a8d7e86bb.png'
-const imgConsultSmall = 'http://localhost:3845/assets/8c8f08f5228fc5dc4d116e16dd507275a5512333.png'
-const imgConsultLarge = 'http://localhost:3845/assets/e90f2c8ec66df4d4bd8ed0d642a99c0671d97957.png'
-const imgAiReport = 'http://localhost:3845/assets/f02be4d03ef88f3bd0a8156c0648c856636ae46a.png'
-const imgProgramSmall = 'http://localhost:3845/assets/a110c1d3cc35cba9498af2750b576323cb5b0d7b.png'
-const imgProgramLarge = 'http://localhost:3845/assets/e6bc45aed6bdf9c671c4cac397e0fcaf4f61aca2.png'
-const imgVector938 = 'http://localhost:3845/assets/a7bb9330a204d53f02a9ae91417eaacc74a81be8.svg'
-const imgEllipse79 = 'http://localhost:3845/assets/0a96e97f3a6de01e86bed36a17cdb7e2f386f0cf.svg'
-const imgEllipse80 = 'http://localhost:3845/assets/6fb080337fe884d0dd3298864761c59bdef0acf2.svg'
-const imgVector939 = 'http://localhost:3845/assets/f30bd249ce4624364ee3d3d3044cf735be28c884.svg'
-const imgEllipse88 = 'http://localhost:3845/assets/23e6ae44218eed862c1a78593da71feab9646263.svg'
-const imgEllipse89 = 'http://localhost:3845/assets/8c2a0c19a517135de2638e3639e600f8cd3c11f6.svg'
-const imgLineReport = 'http://localhost:3845/assets/832409e6e1b545fe327b5dd4461de3de476b2d65.svg'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function VerticalDashedArrow() {
   return (

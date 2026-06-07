@@ -1,28 +1,49 @@
+import imgCircleArrow from '../../assets/exported/32e0785c05111f0ff8b08b72ce653e156adcebf6.svg'
+import imgCircleMask2 from '../../assets/exported/6e0f95226adfa202ae6afe3f638bf9518aa28d8a.svg'
+import imgCircleMask3 from '../../assets/exported/f3a390f04f617663f5b41cd6cb6113414d570e5f.svg'
+import imgCircleWave from '../../assets/exported/bad6713a67bcd62eeaffa3873b5287390115de75.png'
+import imgDispatch from '../../assets/exported/c6a80674abad3c8e260774d2acf12ebc708b4a71.png'
+import imgGogglesMain from '../../assets/exported/a1ef62d3632e52832eac55c5e7677c730593871e.png'
+import imgIntegratedMap from '../../assets/exported/17bc4c8df17ed5ba554dc4ffba47f8535c9026d3.png'
+import imgLineDispatch from '../../assets/exported/5931aee96f8c5c1125f10ab0f0159a718c46d443.svg'
+import imgLineOffline from '../../assets/exported/b0c6622893daad04771576bcc7ef8789cf8ae9ff.svg'
+import imgLineRescue from '../../assets/exported/9e2c6729cabdec8d0423378fe9436c282c150ee8.svg'
+import imgLineStability from '../../assets/exported/8e3654b6c9db686a606d8220623fe68bb1d51ce6.svg'
+import imgLineThermal from '../../assets/exported/0b549d5718d5512d675d86e01722ffe8f4edd3a4.svg'
+import imgLineVital from '../../assets/exported/7286994d941f7f951db5bf5636ba77685591d46f.svg'
+import imgRobotScreen from '../../assets/exported/8281c26f455abd6701ab37b6f751a0455eaae366.png'
+import imgTacticalMap from '../../assets/exported/84fdcf79a74f57647d0f32bfc268feeee6ba1460.png'
+import imgThermalBadge1 from '../../assets/exported/62b70b3e0e820563121bf07e2545b97b026fa27c.png'
+import imgThermalBadge2 from '../../assets/exported/1d688b0771667d34ea9533d750a0f25c6db4be8c.png'
+import imgThermalView1 from '../../assets/exported/b3814752f6d4e62c585a469c6203bc43698cb26a.png'
+import imgThermalView2 from '../../assets/exported/59291a81dcc9018fd8ff2ed11273e703cb588f0a.png'
+import imgVitalBoard from '../../assets/exported/2d5a7e42ae242cc3b19f97fe2d1d0882a4d7267c.png'
+
 import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react'
 import SectionBadge from '../ui/SectionBadge'
 
-const imgCircleWave = 'http://localhost:3845/assets/bad6713a67bcd62eeaffa3873b5287390115de75.png'
-const imgCircleArrow = 'http://localhost:3845/assets/32e0785c05111f0ff8b08b72ce653e156adcebf6.svg'
-const imgCircleMask2 = 'http://localhost:3845/assets/6e0f95226adfa202ae6afe3f638bf9518aa28d8a.svg'
-const imgCircleMask3 = 'http://localhost:3845/assets/f3a390f04f617663f5b41cd6cb6113414d570e5f.svg'
+
+
+
+
 
 type CircleVariant = 'default' | 'variant2' | 'variant3'
-const imgRobotScreen = 'http://localhost:3845/assets/8281c26f455abd6701ab37b6f751a0455eaae366.png'
-const imgTacticalMap = 'http://localhost:3845/assets/84fdcf79a74f57647d0f32bfc268feeee6ba1460.png'
-const imgThermalBadge1 = 'http://localhost:3845/assets/62b70b3e0e820563121bf07e2545b97b026fa27c.png'
-const imgThermalView1 = 'http://localhost:3845/assets/b3814752f6d4e62c585a469c6203bc43698cb26a.png'
-const imgThermalBadge2 = 'http://localhost:3845/assets/1d688b0771667d34ea9533d750a0f25c6db4be8c.png'
-const imgThermalView2 = 'http://localhost:3845/assets/59291a81dcc9018fd8ff2ed11273e703cb588f0a.png'
-const imgIntegratedMap = 'http://localhost:3845/assets/17bc4c8df17ed5ba554dc4ffba47f8535c9026d3.png'
-const imgGogglesMain = 'http://localhost:3845/assets/a1ef62d3632e52832eac55c5e7677c730593871e.png'
-const imgDispatch = 'http://localhost:3845/assets/c6a80674abad3c8e260774d2acf12ebc708b4a71.png'
-const imgVitalBoard = 'http://localhost:3845/assets/2d5a7e42ae242cc3b19f97fe2d1d0882a4d7267c.png'
-const imgLineThermal = 'http://localhost:3845/assets/0b549d5718d5512d675d86e01722ffe8f4edd3a4.svg'
-const imgLineRescue = 'http://localhost:3845/assets/9e2c6729cabdec8d0423378fe9436c282c150ee8.svg'
-const imgLineOffline = 'http://localhost:3845/assets/b0c6622893daad04771576bcc7ef8789cf8ae9ff.svg'
-const imgLineStability = 'http://localhost:3845/assets/8e3654b6c9db686a606d8220623fe68bb1d51ce6.svg'
-const imgLineDispatch = 'http://localhost:3845/assets/5931aee96f8c5c1125f10ab0f0159a718c46d443.svg'
-const imgLineVital = 'http://localhost:3845/assets/7286994d941f7f951db5bf5636ba77685591d46f.svg'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function CircleDivider({
   top,

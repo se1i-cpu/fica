@@ -1,5 +1,8 @@
-const imgGallery = 'http://localhost:3845/assets/1841414602f1c5aecbe353ab06c5b0c0296a46fe.png'
-const imgPolygon = 'http://localhost:3845/assets/58f6a249803b31b4af7055a46d29419e77974a73.svg'
+import imgGallery from '../../assets/exported/1841414602f1c5aecbe353ab06c5b0c0296a46fe.png'
+import imgPolygon from '../../assets/exported/58f6a249803b31b4af7055a46d29419e77974a73.svg'
+
+
+
 
 export default function GallerySection() {
   return (

@@ -1,4 +1,12 @@
 import { useState } from 'react'
+import imgTabletSlide1 from '../../assets/exported/13fe79f7f341ecde78a9acac4806892b561acf2c.png'
+import imgTabletSlide2 from '../../assets/exported/9bf25157f120c69655336140cf482038fc857fbb.png'
+import imgTabletSlide3 from '../../assets/exported/78b91dd57408461fff5355c1be071bf4e9547baa.png'
+import imgRobotSlide1 from '../../assets/exported/1be12131756bc6b7bb3c801f406cdf9ee999de3a.png'
+import imgRobotSlide2 from '../../assets/exported/4d94fd75b98d72af5096ab3f058dc193de95bad2.png'
+import imgGogglesSlide1 from '../../assets/exported/566a3173cbc2711b40cf6ff55198c00700dede6e.png'
+import imgGogglesSlide2 from '../../assets/exported/643a59c6521f522ab292fa54aafb98eafa27873b.png'
+import imgGogglesSlide3 from '../../assets/exported/c6ca3b9a48bbf4bd1295e4d798b03c0b31755378.png'
 
 const imgArrow = '/img/arrow.png'
 
@@ -24,19 +32,19 @@ const DEVICE_SECTIONS: DeviceSection[] = [
     ],
     slides: [
       {
-        image: 'http://localhost:3845/assets/13fe79f7f341ecde78a9acac4806892b561acf2c.png',
+        image: imgTabletSlide1,
         caption: [
           '3D 라이다 매핑 기술을 통해 전술 로봇이 탐색한 내부 구조 데이터를 태블릿 화면에 즉시 시각화하고 최적의 3D 전술 지도를 생성합니다. 생성된 전술 지도는 초저지연 무선 통신 기술을 통해 대원들의 전술 고글 HUD 화면에 즉시 전송 및 표출되어, 시야가 차단된 환경에서도 불확실성 없는 최단 진입 경로를 가이드합니다.',
         ],
       },
       {
-        image: 'http://localhost:3845/assets/9bf25157f120c69655336140cf482038fc857fbb.png',
+        image: imgTabletSlide2,
         caption: [
           '실시간 IoT 데이터 동기화 기술을 통해 전술 고글로부터 송신된 대원들의 생체 데이터를 출동 중 상태에서부터 실시간 체크하여 최적의 컨디션을 가진 대원 위주로 전술 임무를 과학적으로 배정합니다. 작전 중 심부 체온과 피로도가 예측 열 스트레스 알고리즘상 임계치에 도달하면 태블릿 관제 화면에 경고를 띄움과 동시에 대원 고글에 강제 대피 경고 알림을 원격 송출합니다.',
         ],
       },
       {
-        image: 'http://localhost:3845/assets/78b91dd57408461fff5355c1be071bf4e9547baa.png',
+        image: imgTabletSlide3,
         caption: [
           '정보 공백 해소를 통한 현장 진압 시간 단축을 통해 대원들이 화재 환경에서 받는 신체적·심리적 스트레스를 원천적으로 경감시킵니다. 작전 중 태블릿에 축적된 AI 음성 인식(STT) 기술 데이터와 대원별 생체 신호는 복귀 후 소방 작전 보고서 초안으로 자동 변환되어 고질적인 행정 병목을 해결하며, 누적된 생체 데이터를 기반으로 고위험 대원을 선별하고 맞춤형 멘탈 헬스케어 프로그램을 연동하는 최종적인 선순환 생태계를 구현합니다.',
         ],
@@ -52,14 +60,14 @@ const DEVICE_SECTIONS: DeviceSection[] = [
     ],
     slides: [
       {
-        image: 'http://localhost:3845/assets/1be12131756bc6b7bb3c801f406cdf9ee999de3a.png',
+        image: imgRobotSlide1,
         imageFit: 'robot-scan',
         caption: [
           '레이저 신호로 주변 공간을 정밀 측정하는 3D 라이다 스캔 기술을 활용하여 GPS 신호가 수신되지 않는 실내 공간을 고속 탐색하고 구조 데이터를 추출하는 역할을 수행합니다.',
         ],
       },
       {
-        image: 'http://localhost:3845/assets/4d94fd75b98d72af5096ab3f058dc193de95bad2.png',
+        image: imgRobotSlide2,
         caption: [
           '화재 중심부의 직접적인 화염(1,000°C 이상)과 낙하물 충격에 견딜 수 있도록 로봇의 프레임은 항공우주 분야에서 쓰이는 티타늄-알루미늄 합금을 채택했습니다. 표면에는 우주선에 적용되는 플라즈마 세라믹 방열 코팅(TBC) 처리를 더해 화재 중심부에서도 시스템 다운 없이 안정적인 정찰 임무를 수행하며, 탐색된 공간 데이터를 태블릿으로 무선 전송합니다.',
         ],
@@ -75,20 +83,20 @@ const DEVICE_SECTIONS: DeviceSection[] = [
     ],
     slides: [
       {
-        image: 'http://localhost:3845/assets/566a3173cbc2711b40cf6ff55198c00700dede6e.png',
+        image: imgGogglesSlide1,
         caption: [
           '연기를 투과하여 물체의 열분포를 감지하는 비냉각식 열화상 센서를 탑재하여 완전한 어둠 속에서도 시야를 확보하며,',
           '주변 환경 그래픽을 고글 화면에 결합해 진입 속도를 기존 대비 30% 이상 단축합니다.',
         ],
       },
       {
-        image: 'http://localhost:3845/assets/643a59c6521f522ab292fa54aafb98eafa27873b.png',
+        image: imgGogglesSlide2,
         caption: [
           '고글의 외장은 대기 온도 250°C 이상의 연속 사용 환경에서도 기계적 강도를 유지하는 고성능 특수 엔지니어링 플라스틱(PEEK) 소재로 사출되었으며, 내부 레이어에는 단열 성능이 뛰어난 실리카 에어로겔 층을 형성하여 내부 핵심 회로와 대원의 안면을 고열로부터 완벽히 보호합니다.',
         ],
       },
       {
-        image: 'http://localhost:3845/assets/c6ca3b9a48bbf4bd1295e4d798b03c0b31755378.png',
+        image: imgGogglesSlide3,
         caption: [
           '고글 내부에 탑재된 광학 바이오 센서 기술을 통해 대원의 심박수와 산소포화도, 신체 상태 이상 지표를 초단위로 정밀 수집합니다. 수집된 신호는 실시간 IoT 데이터 동기화 기술을 거쳐 지휘관용 태블릿으로 무선 송신되며, 재난 관제 시스템 구동을 위한 일차적인 현장 데이터 입력 장치 역할을 수행합니다.',
         ],
@@ -118,7 +126,6 @@ function SlideImage({ slide, alt }: { slide: SlideCard; alt: string }) {
 function SlideSection({ section }: { section: DeviceSection }) {
   const [activeIndex, setActiveIndex] = useState(0)
 
-  const current = section.slides[activeIndex]
   const isFirst = activeIndex === 0
   const isLast = activeIndex === section.slides.length - 1
 

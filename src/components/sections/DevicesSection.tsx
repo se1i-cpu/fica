@@ -1,11 +1,18 @@
+import imgBg from '../../assets/exported/4c14a5360c544b3c55a2fce6037a5999b5fced51.png'
+import imgGoggles from '../../assets/exported/b0d37546394aa9419041267d4a2fe2d819171a2c.png'
+import imgImage313 from '../../assets/exported/bbb75aaffbdacd9f59391f6186cf7fbf3452f1be.png'
+import imgImage528 from '../../assets/exported/abfc3985a9c51c37300a0044a975391f089a1008.png'
+import imgRectangle534 from '../../assets/exported/4f7c15403e2676668bead741fc5a0fa54ebdf7b2.svg'
+import imgScreen from '../../assets/exported/8281c26f455abd6701ab37b6f751a0455eaae366.png'
+
 import { useState } from 'react'
 
-const imgBg = 'http://localhost:3845/assets/4c14a5360c544b3c55a2fce6037a5999b5fced51.png'
-const imgImage313 = 'http://localhost:3845/assets/bbb75aaffbdacd9f59391f6186cf7fbf3452f1be.png'
-const imgImage528 = 'http://localhost:3845/assets/abfc3985a9c51c37300a0044a975391f089a1008.png'
-const imgRectangle534 = 'http://localhost:3845/assets/4f7c15403e2676668bead741fc5a0fa54ebdf7b2.svg'
-const imgScreen = 'http://localhost:3845/assets/8281c26f455abd6701ab37b6f751a0455eaae366.png'
-const imgGoggles = 'http://localhost:3845/assets/b0d37546394aa9419041267d4a2fe2d819171a2c.png'
+
+
+
+
+
+
 const imgArrow = '/img/arrow.png'
 
 const SLIDES = [

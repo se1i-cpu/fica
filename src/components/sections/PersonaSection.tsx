@@ -1,9 +1,14 @@
+import imgConnectorLine from '../../assets/exported/97a1aa543a23cdd06a065c8592d428d01741ac70.svg'
+import imgFlow from '../../assets/exported/181d6ff5aa2c458786f8742a015db19450d64562.png'
+import imgProfile1 from '../../assets/exported/54f895aa46a1d3777b7663efb1648b4ec7396bb4.png'
+import imgProfile2 from '../../assets/exported/db955213590d3be9eb4ec55a8183d5965ce1f350.png'
+
 import { useEffect, useRef, useState } from 'react'
 
-const imgProfile1 = 'http://localhost:3845/assets/54f895aa46a1d3777b7663efb1648b4ec7396bb4.png'
-const imgProfile2 = 'http://localhost:3845/assets/db955213590d3be9eb4ec55a8183d5965ce1f350.png'
-const imgFlow = 'http://localhost:3845/assets/181d6ff5aa2c458786f8742a015db19450d64562.png'
-const imgConnectorLine = 'http://localhost:3845/assets/97a1aa543a23cdd06a065c8592d428d01741ac70.svg'
+
+
+
+
 
 function PersonaConnectorLine() {
   return (

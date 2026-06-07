@@ -1,7 +1,12 @@
-const imgPackaging = 'http://localhost:3845/assets/98e4be5b10de5017ca6b25103d48a0a2f6544bb3.png'
-const imgLogo = 'http://localhost:3845/assets/b79e3ac39361b63901ade5e581b96326761695b8.svg'
-const imgEllipse72 = 'http://localhost:3845/assets/e264502bd592ceae2195b5ad5167a6dd35c6b3b2.svg'
-const imgVector931 = 'http://localhost:3845/assets/5a6bb895ca93ba3b959be5231cd8ded89ef28c1b.svg'
+import imgEllipse72 from '../../assets/exported/e264502bd592ceae2195b5ad5167a6dd35c6b3b2.svg'
+import imgLogo from '../../assets/exported/b79e3ac39361b63901ade5e581b96326761695b8.svg'
+import imgPackaging from '../../assets/exported/98e4be5b10de5017ca6b25103d48a0a2f6544bb3.png'
+import imgVector931 from '../../assets/exported/5a6bb895ca93ba3b959be5231cd8ded89ef28c1b.svg'
+
+
+
+
+
 
 export default function BrandingSection() {
   return (

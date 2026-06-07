@@ -1,7 +1,10 @@
+import imgBar from '../../assets/exported/0b8b9efee38e12b947d8f246583df709fedcda23.png'
+import imgGraphLegend from '../../assets/exported/1a292e676746f118f05c0a5ef341c255daa74be7.svg'
+
 import { useEffect, useRef, useState } from 'react'
 
-const imgBar = 'http://localhost:3845/assets/0b8b9efee38e12b947d8f246583df709fedcda23.png'
-const imgGraphLegend = 'http://localhost:3845/assets/1a292e676746f118f05c0a5ef341c255daa74be7.svg'
+
+
 
 const stressFactors = [
   { label: '직무자율성 결여', percent: '44.5%', count: '23,368명', width: '514px', highlight: true },

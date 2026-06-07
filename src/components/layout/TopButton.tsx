@@ -1,6 +1,8 @@
+import imgTopBtn from '../../assets/exported/80dfd4d53f558ae86920904a57dcb1b5525f263e.svg'
+
 import { useEffect, useState } from 'react'
 
-const imgTopBtn = 'http://localhost:3845/assets/80dfd4d53f558ae86920904a57dcb1b5525f263e.svg'
+
 
 export default function TopButton() {
   const [isVisible, setIsVisible] = useState(false)
