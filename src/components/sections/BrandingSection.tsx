@@ -2,7 +2,7 @@ import imgEllipse72 from '../../assets/exported/e264502bd592ceae2195b5ad5167a6dd
 import imgLogo from '../../assets/exported/b79e3ac39361b63901ade5e581b96326761695b8.svg'
 import imgPackaging from '../../assets/exported/98e4be5b10de5017ca6b25103d48a0a2f6544bb3.png'
 import imgVector931 from '../../assets/exported/5a6bb895ca93ba3b959be5231cd8ded89ef28c1b.svg'
-
+import ficaIcon from '../../../public/img/logo.png'
 
 
 
@@ -43,7 +43,7 @@ export default function BrandingSection() {
       >
         <div className="absolute left-0 top-[41.06px] h-[782px] w-[745px] overflow-hidden rounded-[28px]">
           <img
-            src="/public/img/icon_mockup.png"
+            src={ficaIcon}
             alt="FICA 앱 아이콘"
             className="pointer-events-none absolute  right-[0%] top-[0.03%] h-[100%] w-[100%] max-w-none"
           />
