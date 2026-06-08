@@ -4,6 +4,7 @@ import imgImage313 from '../../assets/exported/bbb75aaffbdacd9f59391f6186cf7fbf3
 import imgImage528 from '../../assets/exported/abfc3985a9c51c37300a0044a975391f089a1008.png'
 import imgRectangle534 from '../../assets/exported/4f7c15403e2676668bead741fc5a0fa54ebdf7b2.svg'
 import imgScreen from '../../assets/exported/8281c26f455abd6701ab37b6f751a0455eaae366.png'
+import MockUp from '../../../public/img/main.png'
 
 import { useState } from 'react'
 
@@ -54,7 +55,7 @@ function TabletSlide() {
         />
       </div>
       <div className="absolute left-[42px] top-[76px] h-[557px] w-[911px]">
-        <img src="/public/img/main.png" alt="" className="size-full object-cover" />
+        <img src={MockUp} alt="" className="size-full object-cover" />
       </div>
       <div className="absolute left-[4.47px] top-[40.05px] h-[626.445px] w-[668.721px]">
         <img src={imgRectangle534} alt="" className="size-full" />
