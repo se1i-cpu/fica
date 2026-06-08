@@ -1,6 +1,6 @@
 import imgHero from '../../assets/exported/a61c47915919955c5ca0c1b02c259b04049da27f.png'
 import imgLogo from '../../assets/exported/212bb36dfbbdddd474202b2c63e5c29135d880de.svg'
-import iconMockup from '../../../public/img/icon_mockup.png'
+import iconMockup from '../../../public/img/fica_mockup.png'
 import logo from '../../../public/img/logo.png'
 
 
