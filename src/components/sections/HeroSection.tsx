@@ -6,7 +6,7 @@ import logo from '../../../public/img/logo.png'
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[2280px] w-full overflow-hidden bg-fica-hero pt-[74px]">
+    <section className="relative min-h-[1450px] w-full overflow-hidden bg-fica-hero pt-[74px]">
       <img
         src={iconMockup}
         alt=""
