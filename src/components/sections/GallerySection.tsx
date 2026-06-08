@@ -7,13 +7,13 @@ import imgPolygon from '../../assets/exported/58f6a249803b31b4af7055a46d29419e77
 export default function GallerySection() {
   return (
     <section
-      className="relative w-full overflow-hidden min-h-[1250px]"
+      className="relative w-full  min-h-[1250px]"
       data-name="section18"
     >
       {/* image 589 — full bleed, aspect 3840/2494, vertically centered */}
       <div className="absolute left-0 right-0 top-1/2 aspect-[3840/2494] -translate-y-1/2">
         <img
-          src={imgGallery}
+          src="/public/img/final.png"
           alt="FICA 서비스 갤러리"
           className="size-full object-cover"
         />

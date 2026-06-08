@@ -4,7 +4,7 @@ import imgLogo from '../../assets/exported/0497996e4f6b51f5fde66a44f44c8de038635
 
 export default function CTASection() {
   return (
-    <section className="relative flex mb-[-6px] min-h-[974px] w-full flex-col items-center justify-center bg-gradient-to-b from-[#f5f5f5] from-0% to-fica-yellow to-[61%] px-6 pt-24 pb-0 text-center md:px-[200px]">
+    <section className="relative flex mb-0 min-h-[974px] w-full flex-col items-center justify-center bg-gradient-to-b from-[#f5f5f5] from-0% to-fica-yellow to-[61%] px-6 pt-24 pb-0 text-center md:px-[200px]">
       <img src={imgLogo} alt="" className="mb-16 size-[200px]" />
       <h2 className="mb-7 max-w-[861px] text-4xl font-semibold leading-[1.3] tracking-[-1px] text-fica-dark md:text-[50px]">
         안전한 소방 업무, 그 시작에 FICA가 있습니다

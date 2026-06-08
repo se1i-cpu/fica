@@ -2,7 +2,6 @@ import { useState } from 'react'
 import imgTabletSlide1 from '../../assets/exported/13fe79f7f341ecde78a9acac4806892b561acf2c.png'
 import imgTabletSlide2 from '../../assets/exported/9bf25157f120c69655336140cf482038fc857fbb.png'
 import imgTabletSlide3 from '../../assets/exported/78b91dd57408461fff5355c1be071bf4e9547baa.png'
-import imgRobotSlide1 from '../../assets/exported/1be12131756bc6b7bb3c801f406cdf9ee999de3a.png'
 import imgRobotSlide2 from '../../assets/exported/4d94fd75b98d72af5096ab3f058dc193de95bad2.png'
 import imgGogglesSlide1 from '../../assets/exported/566a3173cbc2711b40cf6ff55198c00700dede6e.png'
 import imgGogglesSlide2 from '../../assets/exported/643a59c6521f522ab292fa54aafb98eafa27873b.png'
@@ -60,7 +59,7 @@ const DEVICE_SECTIONS: DeviceSection[] = [
     ],
     slides: [
       {
-        image: imgRobotSlide1,
+        image: '/img/robot.png',
         imageFit: 'robot-scan',
         caption: [
           '레이저 신호로 주변 공간을 정밀 측정하는 3D 라이다 스캔 기술을 활용하여 GPS 신호가 수신되지 않는 실내 공간을 고속 탐색하고 구조 데이터를 추출하는 역할을 수행합니다.',

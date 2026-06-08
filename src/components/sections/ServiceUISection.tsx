@@ -149,7 +149,16 @@ export default function ServiceUISection() {
         className="absolute left-0 right-0 top-[1756px] flex flex-col items-end gap-5 px-6 md:px-[200px]"
         data-name="대원"
       >
-        <ScreenMockup src={imgMemberScreen} alt="대원용 메인 화면" />
+        <div className="relative h-[457px] w-[746px] max-w-full shrink-0 overflow-hidden rounded-[30px]">
+          <video
+            src="/videos/main_1.mp4#t=0.001"
+            className="size-full rounded-[30px] object-cover"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+        </div>
         <p className="w-full text-right text-[18px] leading-[1.5] tracking-[-0.36px] text-[#999999]">
           대원용 메인 화면
         </p>
@@ -160,7 +169,16 @@ export default function ServiceUISection() {
         className="absolute left-0 right-0 top-[2134px] flex flex-col items-start gap-5 px-6 md:px-[200px]"
         data-name="지휘관"
       >
-        <ScreenMockup src={imgCommanderScreen} alt="지휘관 메인 화면" />
+        <div className="relative h-[457px] w-[746px] max-w-full shrink-0 overflow-hidden rounded-[30px]">
+          <video
+            src="/videos/main_2.mp4#t=0.001"
+            className="size-full rounded-[30px] object-cover"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+        </div>
         <p className="text-[18px] leading-[1.5] tracking-[-0.36px] text-[#999999]">
           지휘관 메인 화면
         </p>

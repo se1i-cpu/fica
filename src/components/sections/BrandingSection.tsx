@@ -43,9 +43,9 @@ export default function BrandingSection() {
       >
         <div className="absolute left-0 top-[41.06px] h-[782px] w-[745px] overflow-hidden rounded-[28px]">
           <img
-            src={imgPackaging}
+            src="/public/img/icon_mockup.png"
             alt="FICA 앱 아이콘"
-            className="pointer-events-none absolute left-[-27.71%] top-[0.03%] h-[99.97%] w-[159.32%] max-w-none"
+            className="pointer-events-none absolute  right-[0%] top-[0.03%] h-[100%] w-[100%] max-w-none"
           />
         </div>
       </div>

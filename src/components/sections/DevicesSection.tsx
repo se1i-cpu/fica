@@ -54,7 +54,7 @@ function TabletSlide() {
         />
       </div>
       <div className="absolute left-[42px] top-[76px] h-[557px] w-[911px]">
-        <img src={imgImage528} alt="" className="size-full object-cover" />
+        <img src="/public/img/main.png" alt="" className="size-full object-cover" />
       </div>
       <div className="absolute left-[4.47px] top-[40.05px] h-[626.445px] w-[668.721px]">
         <img src={imgRectangle534} alt="" className="size-full" />

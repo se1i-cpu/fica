@@ -312,11 +312,11 @@ export default function SolutionsSection() {
               <h3 className="w-full text-[32px] font-bold leading-[1.4] tracking-[-0.64px] text-fica-yellow">
                 정보 부족은 심리적 불안과 행정 병목의 악순환으로 이어집니다
               </h3>
-              <div className="w-full text-[24px] leading-[1.5] tracking-[-0.48px] text-fica-muted opacity-80">
+              <div className="w-max text-[24px] leading-[1.5] tracking-[-0.48px] text-fica-muted opacity-80">
                 <p className="mb-0">
                   선행 정보 부족으로 인한 사고 경험이 외상후 스트레스로 고착됩니다.
                 </p>
-                <p>
+                <p className="whitespace-nowrap">
                   또한 자동화된 로그 데이터 부재로 인해 사후에 방대한 보고서 업무 발생이 일어납니다.
                 </p>
               </div>

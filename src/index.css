@@ -21,6 +21,10 @@
     scroll-behavior: smooth;
   }
 
+  p {
+    line-height: 150%;
+  }
+
   body {
     margin: 0;
     font-family: var(--font-pretendard);
