@@ -15,9 +15,9 @@ export default function OnboardingSection() {
           Onboarding
         </p>
         <h2 className="text-4xl font-semibold leading-[1.3] tracking-[-1px] text-black md:text-[50px]">
-          반갑습니다 대원님,
+          Welcome, Firefighter.
           <br />
-          FICA를 소개합니다!
+          Meet FICA!
         </h2>
       </div>
     </section>

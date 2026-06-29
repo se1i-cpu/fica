@@ -20,19 +20,19 @@ const SLIDES = [
   {
     id: 'tablet',
     description:
-      'AI가 대원의 누적 피로도를 분석해 안전한 교대 타이밍을 먼저 제어하고, 복귀 중 무전 기록을 토대로 보고서 초안까지 자동으로 완성합니다.',
+      'AI proactively manages safer crew rotation timing based on cumulative fatigue analysis and automatically prepares report drafts using radio communication records collected during return operations.',
     offset: 0,
   },
   {
     id: 'screen',
     description:
-      '출동 후, 현장·차량·본부에서 수집된 데이터를 하나의 관제 화면으로 통합해 지휘관이 실시간으로 전술 판단을 내릴 수 있도록 지원합니다.',
+      'Sent into the scene ahead of firefighters, the system maps interior structures and detects potential hazards, enabling immediate action and improving initial suppression success rates.',
     offset: -1723,
   },
   {
     id: 'goggles',
     description:
-      '연기를 투과하여 물체의 열분포를 감지하는 열화상 센서를 탑재하여, 완전한 어둠 속에서도 위험 요소를 시각화하고 진압 속도를 극대화합니다.',
+      'Through real-time visualization of 3D spatial intelligence and safe navigation paths, FICA empowers firefighters to take control of the scene and respond with speed and precision.',
     offset: -3846,
   },
 ] as const
@@ -113,11 +113,11 @@ export default function DevicesSection() {
         />
       </div>
 
-      <div className="absolute inset-x-0 top-[139px] px-6 md:px-[200px]">
-        <h2 className="max-w-2xl text-4xl font-semibold leading-[1.3] tracking-[-1px] text-white md:text-[50px]">
-          시간 단축을 가능케 하는
+      <div className="absolute inset-x-0 top-[214px] px-6 md:px-[200px]">
+        <h2 className="max-w-1xl text-4xl font-semibold leading-[1.3] tracking-[-1px] text-white md:text-[50px]">
+          Three Core Tactical Technologies
           <br />
-          FICA의 3대 전술 기기
+          Powering Faster Response Times
         </h2>
       </div>
 
@@ -135,7 +135,7 @@ export default function DevicesSection() {
       <p
         key={activeIndex}
         className="absolute bottom-[57px] right-6 max-w-[483px] text-2xl leading-[1.6] tracking-[-0.48px]        │ │
-│ │     text-fica-text/80 md:right-[201px]"  
+│ │     text-fica-text/80 md:text-[20px] md: right-[200px]"  
       >
         {SLIDES[activeIndex].description}
       </p>

@@ -130,15 +130,14 @@ function DonutChart() {
         </div>
       </div>
 
-      <div className="absolute left-[92.03px] top-[92.03px] size-[166.919px] rounded-full bg-[#252525]">
-        <div className="absolute left-[47.96px] top-[49.97px] w-[72px] text-center not-italic">
+      <div className="absolute left-[92.03px] top-[92.03px] flex size-[166.919px] items-center justify-center rounded-full bg-[#252525]">
+        <div className="text-center not-italic">
           <p className="font-[family-name:var(--font-clash)] text-[20px] font-semibold leading-normal tracking-[-0.4px] text-[#f2f2f2]">
             63.1%
           </p>
-          <div className="text-[16px] font-medium leading-[1.2] tracking-[-0.32px] text-[#eae9e9]">
-            <p className="mb-0">단절된</p>
-            <p>케어 시스템</p>
-          </div>
+          <p className="whitespace-nowrap text-[16px] font-medium leading-[1.2] tracking-[-0.32px] text-[#eae9e9]">
+            Disconnected <br /> Support System
+          </p>
         </div>
       </div>
 
@@ -146,14 +145,14 @@ function DonutChart() {
         <p className="font-[family-name:var(--font-clash)] text-[20px] font-semibold leading-[1.41] tracking-[-0.4px]">
           33.8%
         </p>
-        <p className="text-[16px] leading-[1.41] tracking-[-0.32px]">낙인 우려</p>
+        <p className="text-[16px] leading-[1.41] tracking-[-0.32px]">Fear of Stigma</p>
       </div>
 
-      <div className="absolute left-[289.5px] top-[99px] -translate-x-1/2 whitespace-nowrap text-center text-[#121212]">
+      <div className="absolute left-[298.5px] top-[99px] -translate-x-1/2 whitespace-nowrap text-center text-[#121212]">
         <p className="font-[family-name:var(--font-clash)] text-[20px] font-semibold leading-[1.41] tracking-[-0.4px]">
           39.3%
         </p>
-        <p className="text-[16px] leading-[1.41] tracking-[-0.32px]">접근성</p>
+        <p className="text-[16px] leading-[1.41] tracking-[-0.32px]">Accessibility</p>
       </div>
     </div>
   )
@@ -165,8 +164,8 @@ function PieChart() {
       className="relative mb-[-118px] h-[350px] w-[463px] shrink-0 z-[2]"
       data-name="graph_area"
     >
-      <p className="absolute left-0 top-[300.5px] -translate-y-1/2 whitespace-nowrap text-[18px] leading-[1.6] tracking-[-0.36px] text-[#999]">
-        소방관의 64%
+      <p className="absolute left-[-42px] top-[300.5px] -translate-y-1/2 whitespace-nowrap text-[18px] leading-[1.6] tracking-[-0.36px] text-[#999]">
+        64% of Firefighters
       </p>
 
       <HorizontalDashedArrow />
@@ -190,13 +189,13 @@ function PieChart() {
         </div>
       </div>
 
-      <div className="absolute left-[158px] top-[158px] w-[103px] text-[#121212]">
+      <div className="absolute left-[138px] top-[158px] w-[150px] text-[#121212]">
         <p className="font-[family-name:var(--font-clash)] text-[20px] font-semibold leading-[1.25] tracking-[-0.4px]">
           70%
         </p>
         <div className="text-[16px] leading-[1.25] tracking-[-0.32px]">
-          <p className="mb-0">방대한 보고서</p>
-          <p>작성과 수면 부족</p>
+          <p className="mb-0">Administrative Work</p>
+          <p>& Sleep Deprivation</p>
         </div>
       </div>
     </div>
@@ -210,14 +209,14 @@ function SolutionCard({
   contentWidth,
 }: {
   number: string
-  title: string
+  title: ReactNode
   description: string
   contentWidth: string
 }) {
   return (
-    <article className="relative z-[1] h-[262px] w-full shrink-0 rounded-[30px] bg-[#141414]">
+    <article className="relative z-[1] h-[322px] w-full shrink-0 rounded-[30px] bg-[#141414]">
       <div className={`absolute left-[50px] top-[53px] flex flex-col gap-[18px] ${contentWidth}`}>
-        <div className="flex w-[336px] flex-col gap-[6px] font-bold">
+        <div className="flex w-full flex-col gap-[6px] font-bold">
           <p className="text-[20px] leading-[1.6] tracking-[-0.4px] text-fica-muted">{number}</p>
           <h3 className="text-[24px] leading-[1.55] tracking-[-0.48px] text-fica-text">{title}</h3>
         </div>
@@ -269,9 +268,15 @@ export default function SolutionsSection() {
                 <DonutChart />
                 <SolutionCard
                   number="01"
-                  title="조직 문화 속 낙인 우려와 접근성"
-                  description="조직 내 낙인 우려와 물리적인 접근성 문제는 63.1%의 대원을 심리적 사각지대에 고립시키며 실질적인 회복을 가로막고 있습니다."
-                  contentWidth="w-[505px] max-w-[calc(100%-48px)]"
+                  title={
+                    <>
+                      Barriers to Mental Health Support:
+                      <br />
+                      Stigma & Accessibility
+                    </>
+                  }
+                  description="Concerns about stigma and limited accessibility leave 63.1% of firefighters underserved, creating barriers to meaningful recovery and psychological support."
+                  contentWidth="w-[500px] max-w-[calc(100%-48px)]"
                 />
               </div>
 
@@ -279,15 +284,21 @@ export default function SolutionsSection() {
                 <PieChart />
                 <SolutionCard
                   number="02"
-                  title="스트레스 요인"
-                  description="소방대원 64%가 스트레스 요인의 70%를 방대한 보고서 작성과 수면 부족으로 꼽을 만큼, 현장 이후의 행정 과부하는 대원의 회복을 가로막는 심각한 장벽입니다."
+                  title={
+                    <>
+                    Administrative Burden as a 
+                    <br />
+                    Major Stress Factor
+                    </>
+                  }
+                  description="For 64% of firefighters, extensive reporting requirements and sleep deprivation are major contributors to stress. Post-incident administrative workloads continue to hinder recovery and overall well-being."
                   contentWidth="w-[679px] max-w-[calc(100%-48px)]"
                 />
               </div>
             </div>
 
             <p className="w-full text-right text-[16px] font-medium leading-[1.5] tracking-[-0.32px] text-[#666666]">
-              자료: 2023년 소방공무원 마음건강 설문 주요 결과
+              Source: 2023 Firefighters' Mental Health Survey
             </p>
           </div>
 
@@ -308,16 +319,16 @@ export default function SolutionsSection() {
               isArticleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
           >
-            <div className="absolute left-1/2 top-[calc(50%+0.5px)] flex w-[759px] max-w-[calc(100%-48px)] -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-[28px] text-center">
-              <h3 className="w-full text-[32px] font-bold leading-[1.4] tracking-[-0.64px] text-fica-yellow">
-                정보 부족은 심리적 불안과 행정 병목의 악순환으로 이어집니다
+            <div className="absolute left-1/2 top-[calc(50%+0.5px)] flex w-full max-w-[1120px] -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-[28px] px-6 text-center">
+              <h3 className="w-full whitespace-nowrap text-[32px] font-bold leading-[1.4] tracking-[-0.64px] text-fica-yellow">
+                Information Gaps Lead to Stress and Administrative Bottlenecks
               </h3>
               <div className="w-max text-[24px] leading-[1.5] tracking-[-0.48px] text-fica-muted opacity-80">
                 <p className="mb-0">
-                  선행 정보 부족으로 인한 사고 경험이 외상후 스트레스로 고착됩니다.
+                  Limited situational awareness increases the risk of traumatic incidents, while the lack of 
                 </p>
                 <p className="whitespace-nowrap">
-                  또한 자동화된 로그 데이터 부재로 인해 사후에 방대한 보고서 업무 발생이 일어납니다.
+                  automated logs leads to extensive post-incident reporting workloads.
                 </p>
               </div>
             </div>

@@ -1,4 +1,3 @@
-import imgAiReport from '../../assets/exported/f02be4d03ef88f3bd0a8156c0648c856636ae46a.png'
 import imgAsset1 from '../../assets/exported/d7c61c9e4eac458a26783c55f3a0d040af407a37.png'
 import imgAsset2 from '../../assets/exported/a7f6091b297e378a0492a72cc969917ffac3f1e6.png'
 import imgAsset3 from '../../assets/exported/228490f8866b260f11c3d47b9bf9a4f38a8a2d48.png'
@@ -15,7 +14,6 @@ import imgEllipse88 from '../../assets/exported/23e6ae44218eed862c1a78593da71fea
 import imgEllipse89 from '../../assets/exported/8c2a0c19a517135de2638e3639e600f8cd3c11f6.svg'
 import imgLineReport from '../../assets/exported/832409e6e1b545fe327b5dd4461de3de476b2d65.svg'
 import imgProgramLarge from '../../assets/exported/e6bc45aed6bdf9c671c4cac397e0fcaf4f61aca2.png'
-import imgProgramSmall from '../../assets/exported/a110c1d3cc35cba9498af2750b576323cb5b0d7b.png'
 import imgVector938 from '../../assets/exported/a7bb9330a204d53f02a9ae91417eaacc74a81be8.svg'
 import imgVector939 from '../../assets/exported/f30bd249ce4624364ee3d3d3044cf735be28c884.svg'
 
@@ -89,7 +87,7 @@ function FeatureText({
       <p className="text-[30px] font-semibold leading-[1.25] tracking-[-0.6px] opacity-80">
         {title}
       </p>
-      <p className="text-[24px] leading-[1.6] tracking-[-0.48px] opacity-50">{description}</p>
+      <p className="text-[20px] leading-[1.6] tracking-[-0.48px] opacity-50">{description}</p>
     </div>
   )
 }
@@ -177,7 +175,7 @@ function ConsultLine() {
         className="pointer-events-none absolute left-[320.5px] top-[82.68px] hidden -translate-x-1/2 whitespace-nowrap text-[20px] leading-[1.5] tracking-[-0.4px] text-[#333333] md:block"
         data-node-id="3390:12454"
       >
-        상담 예약
+        Appointment
       </p>
     </>
   )
@@ -218,7 +216,7 @@ function ProgramLine() {
         className="pointer-events-none absolute left-[312.5px] top-[69px] hidden -translate-x-1/2 whitespace-nowrap text-[20px] leading-[1.5] tracking-[-0.4px] text-[#333333] md:block"
         data-node-id="3390:12455"
       >
-        프로그램 상세 정보
+        Program Detail
       </p>
     </>
   )
@@ -232,9 +230,9 @@ export default function SmartAdminSection() {
     >
       {/* 스마트 행정 — top 214 */}
       <div className="absolute left-0 right-0 top-[214px] px-6 md:px-[200px]" data-name="title">
-        <SectionHeading badge="스마트 행정">
-          <p className="mb-0">현장 로그 데이터의 보고서 자동화를 통해</p>
-          <p className="mb-0">행정 부담 경감시킵니다</p>
+        <SectionHeading badge="Smart Administration">
+          <p className="mb-0">Reducing Administrative Burden </p>
+          <p className="mb-0">Through Automation</p>
         </SectionHeading>
       </div>
 
@@ -248,9 +246,9 @@ export default function SmartAdminSection() {
 
       {/* 심리케어 — top 1494 */}
       <div className="absolute left-0 right-0 top-[1494px] px-6 md:px-[200px]" data-name="title">
-        <SectionHeading badge="심리케어">
-          <p className="mb-0">현장의 심리적 충격을 완화하고,</p>
-          <p className="mb-0">일상으로의 건강한 복귀를 돕습니다</p>
+        <SectionHeading badge="Mental Care">
+          <p className="mb-0">Managing Psychological Aftereffects </p>
+          <p className="mb-0">for Sustainable Operations</p>
         </SectionHeading>
       </div>
 
@@ -273,8 +271,8 @@ export default function SmartAdminSection() {
       {/* 전문 심리 상담사 — left 846, top 2478 */}
       <FeatureText
         className="absolute left-6 top-[2478px] w-full max-w-[874px] md:left-[846px]"
-        title="전문 심리 상담사 상담 채팅 및 대면 예약"
-        description="현장 스트레스와 외상후 스트레스 장애의 체계적인 관리를 위해 전문 심리 상담사와 실시간으로 대화할 수 있는 안전한 1:1 비공개 채팅 창을 제공합니다. 현장 대면 상담으로 즉시 연계하여 예약할 수 있는 통합 시스템을 지원합니다."
+        title="Professional Counseling Support"
+        description="Connect with certified mental health professionals through private real-time counseling and appointment scheduling. Personalized support is provided based on individual stress and recovery data to promote long-term psychological resilience."
       />
 
       {/* care 2 — top 2951, 자가진단 */}
@@ -294,16 +292,23 @@ export default function SmartAdminSection() {
         <div className="absolute left-0 top-0 flex items-start gap-[29px]">
           <SelfDiagnosisSlider />
           <div className="h-[535px] w-[875px] shrink-0 overflow-hidden rounded-[30px]">
-            <img src={imgAiReport} alt="AI 분석 리포트" className="size-full object-cover" />
+            <video
+              src="/videos/care.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="size-full object-cover"
+            />
           </div>
         </div>
       </div>
 
       {/* 자가진단 및 AI분석리포트 — left 845, top 3529 */}
       <FeatureText
-        className="absolute left-6 top-[3529px] w-full max-w-[875px] md:left-[845px]"
-        title="자가진단 및 AI분석리포트"
-        description="자가진단과 AI 분석 알고리즘을 통해 신뢰할 수 있는 객관적인 데이터로 시각화합니다. 축적된 진단 데이터와 자가 진단을 분석하여 현재의 스트레스 상태를 정밀하게 진단하고, 이를 기반으로 맞춤형 분석 리포트를 제공합니다."
+        className="absolute left-6 top-[3529px] w-full max-w-[905px] md:left-[845px]"
+        title="Self-Assessment & AI Analysis Report"
+        description="AI analyzes self-assessments and accumulated biometric data to evaluate current stress levels. Personalized reports provide actionable insights for continuous mental health management and recovery."
       />
 
       {/* care 3 — top 4021, 프로그램 */}
@@ -313,7 +318,14 @@ export default function SmartAdminSection() {
       >
         <div className="absolute left-0 top-0 flex w-full items-end justify-between">
           <div className="h-[373px] w-[611px] shrink-0 overflow-hidden rounded-[30px]">
-            <img src={imgProgramSmall} alt="회복 프로그램" className="size-full object-cover" />
+            <video
+              src="/videos/program.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="size-full object-cover"
+            />
           </div>
           <div className="h-[535px] w-[874px] shrink-0 overflow-hidden rounded-[30px]">
             <img src={imgProgramLarge} alt="맞춤형 회복 프로그램" className="size-full object-cover" />
@@ -325,8 +337,8 @@ export default function SmartAdminSection() {
       {/* 맞춤형 회복 프로그램 — left 846, top 4602 */}
       <FeatureText
         className="absolute left-6 top-[4602px] w-full max-w-[874px] md:left-[846px]"
-        title="맞춤형 회복 프로그램 추천 시스템"
-        description="AI 심리 분석 리포트와 실시간 스트레스 지표를 기반으로, 대원 개개인의 심리 상태에 최적화된 맞춤형 회복 콘텐츠를 제안합니다."
+        title="Personalized Recovery Program Recommendation"
+        description="Based on AI psychological analysis reports and real-time stress indicators, personalized recovery programs are recommended to support each firefighter's mental well-being."
       />
     </section>
   )

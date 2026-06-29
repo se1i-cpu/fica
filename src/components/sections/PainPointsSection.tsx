@@ -159,21 +159,21 @@ function ScrollChevrons({ intervalMs = 400 }: ScrollChevronsProps) {
 
 const testimonials = [
   {
-    name: '권진섭',
-    station: '분당소방서 구미119안전센터',
+    name: 'Jinseop Kwon',
+    station: 'Firefighter, Gumi 119 Safety Center',
     photo: imgProfile1,
     profileVariant: 1 as const,
     quote:
-      '출동중 현장 정보 특히 건물 구조나 위치 위험물 등은 요즘 매우 잘 등록 되어 있어요. 다만, 일반 진압, 구조에서는 그런 정보 취득이 어려워요.',
+      'Building information is available,but it is difficult to access during actual entry and rescue operations.',
     contentWidth: 'w-[637px]',
   },
   {
-    name: '이현진',
-    station: '화성소방서 목동119안전센터',
+    name: 'Hyeonjin Lee',
+    station: 'Firefighter, Mokdong 119 Safety Center',
     photo: imgProfile2,
     profileVariant: 2 as const,
     quote:
-      '지휘차에는 장비가 있어서 건물 정보를 보기 쉬워요. 그래도 방재센터에 물어보면 잘 알려주는 편이지만 매번 물어봐야하는 불편함이 있어요.',
+      'Building information is available to command units. However, firefighters must rely on the control center to access it',
     contentWidth: 'w-[646px]',
   },
 ]
@@ -219,14 +219,14 @@ export default function PainPointsSection() {
       className="relative w-full bg-fica-black"
       data-name="section7_1"
     >
-      <div className="mx-auto flex w-full max-w-[1920px] flex-col items-center gap-[149px]">
+      <div className="mx-auto flex w-full max-w-[1920px] flex-col items-center gap-[100px]">
         <div className="flex w-full flex-col items-start gap-[28px] px-6 md:px-[200px]">
           <p className="w-full font-[family-name:var(--font-clash)] text-[28px] font-semibold leading-[1.5] text-fica-yellow">
             Pain Points
           </p>
-          <h2 className="w-full text-[50px] font-semibold leading-[1.3] tracking-[-1px] text-fica-text">
-            <span className="block">소방 현장의 진압 시간은</span>
-            <span className="block">왜&nbsp;&nbsp;자꾸만 길어질까요?</span>
+          <h2 className="w-full text-[40px] font-semibold leading-[1.3] tracking-[-1px] text-fica-text">
+            <span className="block">What's Slowing Down </span>
+            <span className="block">Firefighters on the Scene?</span>
           </h2>
         </div>
 
@@ -266,7 +266,7 @@ export default function PainPointsSection() {
                   ))}
                 </div>
                 <p className="w-full text-right text-[18px] leading-[1.5] tracking-[-0.36px] text-[#666666]">
-                  실제 설문조사 기반 답변
+                  Based on Real Survey Responses
                 </p>
               </div>
 
@@ -287,17 +287,17 @@ export default function PainPointsSection() {
                   isArticleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                 }`}
               >
-                <div className="absolute left-1/2 top-[calc(50%-2.5px)] flex w-[757px] max-w-[calc(100%-48px)] -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-[28px] text-center">
-                  <h3 className="w-full text-[32px] font-bold leading-[1.4] tracking-[-0.64px] text-fica-yellow">
-                    현장 진입 전, 사전 탐색 부재로 정보 공백이 발생하고 있습니다
+                <div className="absolute left-1/2 top-[calc(50%-2.5px)] flex w-full max-w-[1120px] -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-[28px] px-6 text-center">
+                  <h3 className="w-full whitespace-nowrap text-[32px] font-bold leading-[1.4] tracking-[-0.64px] text-fica-yellow">
+                    Entering Without Information Creates Critical Operational Risks
                   </h3>
                   <div className="w-full text-[24px] leading-[1.6] tracking-[-0.48px] text-fica-muted opacity-80">
                     <p className="mb-0">
-                      정보가 없는 상태에서의 강제 진입은 대원에게 극심한 불안감과 인명 피해 위험을
+                      Without pre-entry information, firefighters face greater uncertainty and operational risk. 
                     </p>
                     
                     <p>
-                      초래합니다. 이는 대원의 심리적 요인인 정보 부재로 인한 심리적 압박과 이어집니다.
+                      This information gap increases psychological pressure and affects decision-making in the field.
                     </p>
                   </div>
                 </div>

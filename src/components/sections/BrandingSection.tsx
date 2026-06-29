@@ -86,10 +86,7 @@ export default function BrandingSection() {
         data-name="p"
       >
         <p className="w-full max-w-[745px] text-[24px] leading-[1.6] tracking-[-0.48px] text-[#999999]">
-          FICA는 FIREFIGHTER와 CARE의 앞부분을 결합해 만든 이름으로, 소방관을 중심에 둔 AI
-          파트너 서비스입니다. 현장 진입 전부터 복귀 단계까지 소방관에게 필요한 모든 정보를
-          하나로 연결하여 돕는다는 의미를 담고 있습니다. 단순한 도구를 넘어, 소방관의 판단과
-          안전을 함께 책임지는 전술 통합 AI 파트너를 지향합니다.
+          FICA, derived from FireFighter and Care, is an AI partner designed to support firefighters from emergency response to recovery. By connecting critical information into a single ecosystem, it enhances decision-making, safety, and operational efficiency.
         </p>
       </div>
     </section>

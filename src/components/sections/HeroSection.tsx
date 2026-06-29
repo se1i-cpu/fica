@@ -21,10 +21,10 @@ export default function HeroSection() {
             FICA
           </h1>
         </div>
-        <p className="mt-6 max-w-xl text-2xl font-semibold leading-[1.35] tracking-[-0.24px] text-fica-text/50">
-          현장의 불확실성을 완벽하게 제거하는
+        <p className="mt-1 max-w-xl text-2xl font-semibold leading-[1.35] tracking-[-0.24px] text-fica-text/50">
+          Eliminating Uncertainty in Emergency Response,
           <br />
-          소방관 전용 AI 파트너 서비스
+          an AI-Powered Partner for Firefighters
         </p>
       </div>
     </section>

@@ -18,26 +18,26 @@ export default function DesignSystemSection() {
           Typography
         </span>
         <div className="flex flex-col items-center gap-16 md:flex-row md:justify-end md:gap-[142px]">
-          <div className="text-center">
+          <div className="text-left">
             <p className="font-[family-name:var(--font-clash)] text-[200px] leading-[1.2] tracking-[-6px] text-fica-text md:text-[300px]">
               Aa
             </p>
-            <p className="mt-12 text-2xl font-semibold text-fica-text">Clash display</p>
+            <p className="mt-0 text-2xl font-semibold text-fica-text">Clash display</p>
             <p className="text-fica-text/70">SemiBold</p>
           </div>
-          <div className="text-center">
-            <p className="text-[200px] leading-[1.2] tracking-[-6px] text-fica-text md:text-[300px]">가</p>
-            <p className="mt-12 text-2xl font-semibold text-fica-text">Pretendard</p>
+          <div className="text-left">
+            <p className="text-[200px] leading-[1.2] tracking-[-6px] text-fica-text md:text-[300px]">Aa</p>
+            <p className="mt-0 text-2xl font-semibold text-fica-text">Pretendard</p>
             <p className="text-fica-text/70">Light · Regular · SemiBold · Bold</p>
           </div>
         </div>
       </div>
 
       <div className="mb-[257px] space-y-6 text-[#212121]">
-        <p className="text-center text-5xl leading-[1.2] md:text-[96px]">평균 13분에서 5분으로</p>
-        <p className="text-5xl leading-[1.2] md:text-[96px]">극적인 진압 시간 단축</p>
+        <p className="text-center text-5xl leading-[1.2] md:text-[96px]">From 13 Minutes to 5</p>
+        <p className="text-5xl leading-[1.2] md:text-[96px]">A Dramatic Reduction Time</p>
         <p className="text-right text-5xl leading-[1.2] md:text-[96px]">
-          그 시작에 <span className="font-[family-name:var(--font-clash)]">FICA</span>가 있습니다
+          Powered by FICA
         </p>
       </div>
 

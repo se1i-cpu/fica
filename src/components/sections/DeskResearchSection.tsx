@@ -7,16 +7,16 @@ import { useEffect, useRef, useState } from 'react'
 
 
 const stressFactors = [
-  { label: '직무자율성 결여', percent: '44.5%', count: '23,368명', width: '514px', highlight: true },
-  { label: '조직 불공정성', percent: '30.6%', count: '16,057명', width: '335px' },
-  { label: '보상 부적절', percent: '24.2%', count: '12,699명', width: '294px' },
-  { label: '사회적 지지부족', percent: '22.1%', count: '11,592명', width: '270px' },
-  { label: '그외', percent: '38.8%', count: '20,395명', width: '462px' },
+  { label: 'Lack of Operational Autonomy', percent: '44.5%', count: '23,368', width: '600px', highlight: true },
+  { label: 'Organizational Inequity', percent: '30.6%', count: '16,057', width: '405px' },
+  { label: 'Inadequate Compensation', percent: '24.2%', count: '12,699', width: '364px' },
+  { label: 'Lack of Social Support', percent: '22.1%', count: '11,592', width: '320px' },
+  { label: 'Other Factors', percent: '38.8%', count: '20,395', width: '462px' },
 ]
 
 const mentalHealthBars = [
   {
-    label: '수면장애',
+    label: 'Sleep Disorders',
     percent: '27.2%',
     x: 0,
     y: -1,
@@ -26,7 +26,7 @@ const mentalHealthBars = [
     paddingX: 27,
   },
   {
-    label: '문제성 음주',
+    label: 'Problematic Alcohol Use',
     percent: '26.4%',
     x: 149,
     y: 16,
@@ -44,7 +44,7 @@ const mentalHealthBars = [
     paddingX: 31,
   },
   {
-    label: '우울증',
+    label: 'Depression',
     percent: '6.3%',
     x: 447,
     y: 143,
@@ -57,16 +57,16 @@ const mentalHealthBars = [
 function MentalHealthGraph({ isVisible }: { isVisible: boolean }) {
   return (
     <div
-      className="relative mx-auto h-[558px] w-[746px] max-w-full rounded-[30px] bg-[#141414]"
+      className="relative mx-auto h-[558px] w-[746px] max-w-full rounded-[30px] bg-[#141414] lg:h-full"
       data-name="graph_2"
     >
       <div
         className="absolute left-[93px] top-[59px] flex w-[559px] max-w-[calc(100%-186px)] flex-col gap-[6px]"
         data-name="graph_area"
       >
-        <div className="flex w-full flex-col gap-[37px]" data-name="bar_area">
+        <div className="flex w-full flex-col gap-[68px]" data-name="bar_area">
           <p className="text-[24px] leading-[1.6] tracking-[-0.48px] text-[#c5c5c5]">
-            소방공무원 정신건강 실태 분석
+            Mental Health Challenges Among Firefighters
           </p>
 
           <div className="flex w-full flex-col gap-[14px]" data-name="bar_area">
@@ -121,7 +121,7 @@ function MentalHealthGraph({ isVisible }: { isVisible: boolean }) {
         </div>
 
         <div
-          className="ml-[58px] flex items-end gap-[10px]"
+          className="ml-[58px] mt-[30px] flex items-end gap-[10px]"
           data-name="title"
         >
           <div className="relative h-[50px] w-[97px] shrink-0" data-name="Group 1063">
@@ -129,8 +129,8 @@ function MentalHealthGraph({ isVisible }: { isVisible: boolean }) {
               <img src={imgGraphLegend} alt="" className="block size-full max-w-none" />
             </div>
           </div>
-          <p className="shrink-0 whitespace-nowrap text-[20.727px] font-bold leading-normal tracking-[-0.4145px] text-[#f3ff47]">
-            소방관 52,802명이 심리적 불안을 겪고 있습니다.
+          <p className="shrink-0 whitespace-nowrap text-[16px] font-bold leading-[0.5] tracking-[-0.4145px] text-[#f3ff47]">
+            52,802 Firefighters Face Ongoing Mental Health Risks
           </p>
         </div>
       </div>
@@ -166,19 +166,20 @@ export default function DeskResearchSection() {
 
   return (
     <section className="w-full bg-fica-black px-6 pt-[310px] pb-[320px] md:px-[200px]">
-      <div className="mb-36 flex flex-col gap-7">
+      <div className="mb-24 flex flex-col gap-7">
         <p className="font-[family-name:var(--font-clash)] text-[28px] font-semibold text-fica-yellow">
           Desk Research
         </p>
-        <div className="flex flex-col gap-8 xl:flex-row xl:gap-[150px]">
-          <h2 className="shrink-0 text-4xl font-semibold leading-[1.3] tracking-[-1px] text-fica-text md:text-[50px]">
-            무엇이 소방관을 불안하게 만들고,
+        <div className="flex flex-col gap-8 xl:flex-row xl:gap-[180px] ">
+          <h2 className="shrink-0 text-4xl font-semibold leading-[1.3] tracking-[-1px] text-fica-text md:text-[40px]">
+            What's Standing Between 
             <br />
-            현장을 지체되게 할까요?
+            Firefighters and Faster Response?
           </h2>
-          <p className="text-2xl leading-[1.6] tracking-[-0.48px] text-fica-text/80">
-            설문 결과, 소방공무원의 스트레스를 유발하는 주요 요인은 직무 자율성 결여로
-            나타났습니다. 이는 현장의 업무 부담과 심리적 압박을 심화시키는 핵심 원인입니다.
+          <p className="text-1xl leading-[1.6] tracking-[-0.48px] text-fica-text/80 md-text[20px]">
+            Survey results revealed that a lack of operational autonomy is one of the primary sources 
+            of stress among firefighters. This limitation increases both workload and psychological 
+            pressure, making emergency response more challenging and less efficient.
           </p>
         </div>
       </div>
@@ -187,7 +188,7 @@ export default function DeskResearchSection() {
         <div className="grid w-full gap-7 lg:grid-cols-2">
           <div className="rounded-[30px] bg-[#141414] p-12 lg:p-16">
             <p className="mb-11 text-2xl tracking-[-0.48px] text-[#c5c5c5]">
-              소방공무원 직무 스트레스 요인 심층 분석
+              Key Sources of Occupational Stress <br />Among Firefighters
             </p>
             <div className="flex flex-col gap-5">
               {stressFactors.map((item) => (
@@ -217,7 +218,7 @@ export default function DeskResearchSection() {
           <MentalHealthGraph isVisible={isVisible} />
         </div>
         <p className="text-lg tracking-[-0.36px] text-[#666]">
-          자료: 2023년 소방공무원 마음건강 설문 주요 결과
+          Source: Key Results of the 2023 Firefighter Mental Health Survey
         </p>
       </div>
     </section>

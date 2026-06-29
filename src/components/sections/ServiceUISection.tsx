@@ -17,28 +17,28 @@ const imgArrow = '/img/arrow.png'
 
 const ONBOARDING_STEPS = [
   {
-    label: '로그인',
+    label: 'Sign In',
     image: imgOnboardingLogin,
     imageAlt: '온보딩 로그인 화면',
-    cardTitle: ['안전한 임무 수행을 위한', '대원님의 등록을 시작합니다'],
+    cardTitle: ['Begin Registration ', 'for Safer Operations'],
   },
   {
-    label: '소속 권한 인증(카메라)',
+    label: 'Camera Check',
     image: imgOnboardingCamera,
     imageAlt: '소속 권한 인증 카메라 화면',
-    cardTitle: ['직무에 최적화된 전술 권한 부여를 위한', '본인 확인을 시작합니다'],
+    cardTitle: ['Verify Your Identity ', 'for Tactical Access'],
   },
   {
-    label: '소속 권한 인증(수기작성)',
+    label: 'Manual Check',
     image: imgOnboardingManual,
     imageAlt: '소속 권한 인증 수기작성 화면',
-    cardTitle: ['직무에 최적화된 전술 권한 부여를 위한', '본인 확인을 시작합니다'],
+    cardTitle: ['Verify Your Identity', 'for Tactical Access'],
   },
   {
-    label: '개인 바이탈 설정',
+    label: 'Vital Setup',
     image: imgOnboardingVital,
     imageAlt: '개인 바이탈 설정 화면',
-    cardTitle: ['위급 상황 시 신속한 처치를 위한', '대원님의 필수 의료 정보를 기입합니다'],
+    cardTitle: ['Provide Medical Information ', 'for Emergency Response'],
   },
 ] as const
 
@@ -73,10 +73,10 @@ export default function ServiceUISection() {
       <div className="absolute left-0 right-0 top-0 h-[1482px] bg-white">
         <div className="absolute left-0 right-0 top-[238px] flex flex-col gap-[104px] px-6 md:px-[200px]">
           <div className="flex w-fit flex-col items-start gap-[28px]">
-            <Badge>온보딩</Badge>
+            <Badge>Onboarding</Badge>
             <div className="text-[50px] font-semibold leading-[1.3] tracking-[-1px] text-[#0b0b0b]">
-              <p className="mb-0 whitespace-nowrap">안전한 임무 수행을 위한</p>
-              <p className="mb-0 whitespace-nowrap">대원님의 등록을 시작합니다</p>
+              <p className="mb-0 whitespace-nowrap">Begin Your Registration</p>
+              <p className="mb-0 whitespace-nowrap">for Safer Operations</p>
             </div>
           </div>
 
@@ -136,11 +136,10 @@ export default function ServiceUISection() {
         className="absolute left-0 right-0 top-[1686px] flex flex-col items-start gap-[28px] px-6 md:px-[200px]"
         data-name="title"
       >
-        <Badge>메인 화면</Badge>
-        <div className="max-w-[700px] text-[50px] font-semibold leading-[1.3] tracking-[-1px] text-[#0b0b0b]">
-          <p className="mb-0">출동 전부터 복귀 후까지,</p>
-          <p className="mb-0">대원님의 모든 상태를</p>
-          <p className="mb-0">한눈에 최적화합니다</p>
+        <Badge>Main</Badge>
+        <div className="max-w-[800px] text-[40px] font-semibold leading-[1.3] tracking-[-1px] text-[#0b0b0b]">
+          <p className="mb-0">From Dispatch to Recovery,</p>
+          <p className="mb-0">Everything You Need in One View</p>
         </div>
       </div>
 
@@ -151,7 +150,7 @@ export default function ServiceUISection() {
       >
         <div className="relative h-[457px] w-[746px] max-w-full shrink-0 overflow-hidden rounded-[30px]">
           <video
-            src="/videos/main_1.mp4#t=0.001"
+            src="/videos/main_3.mp4#t=0.001"
             className="size-full rounded-[30px] object-cover"
             autoPlay
             loop
@@ -160,7 +159,7 @@ export default function ServiceUISection() {
           />
         </div>
         <p className="w-full text-right text-[18px] leading-[1.5] tracking-[-0.36px] text-[#999999]">
-          대원용 메인 화면
+          Firefighter Dashboard
         </p>
       </div>
 
@@ -171,7 +170,7 @@ export default function ServiceUISection() {
       >
         <div className="relative h-[457px] w-[746px] max-w-full shrink-0 overflow-hidden rounded-[30px]">
           <video
-            src="/videos/main_2.mp4#t=0.001"
+            src="/videos/main_4.mp4#t=0.001"
             className="size-full rounded-[30px] object-cover"
             autoPlay
             loop
@@ -180,7 +179,7 @@ export default function ServiceUISection() {
           />
         </div>
         <p className="text-[18px] leading-[1.5] tracking-[-0.36px] text-[#999999]">
-          지휘관 메인 화면
+          Commander Dashboard
         </p>
       </div>
 
@@ -190,14 +189,10 @@ export default function ServiceUISection() {
         data-name="Frame 2147238584"
       >
         <div className="w-full max-w-[616px] text-[30px] font-semibold leading-[1.25] tracking-[-0.6px] text-[#0b0b0b]">
-          <p className="mb-0">개인 최적화 기반의</p>
-          <p className="mb-0">직관적 전술 제어 시스템</p>
+          <p className="mb-0">Personalized Tactical Control System</p>
         </div>
-        <p className="w-full max-w-[616px] text-[24px] leading-[1.6] tracking-[-0.48px] text-[#999999]">
-          막연한 감각이나 컨디션 체크에 의존하지 않고, 신뢰할 수 있는 객관적 정량 수치를
-          통해 완벽한 출동 대응 태세를 갖춥니다. 현장 전술 지휘부터 사후 멘탈 케어까지
-          복잡하게 흩어져 있던 서비스 뎁스를 직관적인 단 한 장의 통합 대시보드 화면으로
-          완벽히 정리합니다.
+        <p className="w-full max-w-[616px] text-[20px] leading-[1.6] tracking-[-0.48px] text-[#999999]">
+          Objective operational data replaces guesswork, enabling firefighters to respond with confidence and precision. From field command and crew management to recovery and mental wellness support, every critical function is unified within a single intuitive dashboard experience.
         </p>
       </div>
     </section>

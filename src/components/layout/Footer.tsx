@@ -3,9 +3,9 @@ import imgLogo from '../../assets/exported/e30eeb7b9cea40caed5ae9bc19740bdfd9696
 
 
 const designers = [
-  { name: '한유경' },
-  { name: '노승민' },
-  { name: '장세원' },
+  { name: 'Yookyung Han' },
+  { name: 'Seungmin Noh' },
+  { name: 'Sewon Jang' },
 ]
 
 export default function Footer() {
@@ -26,7 +26,7 @@ export default function Footer() {
         {designers.map(({ name }) => (
           <div key={name} className="flex w-[132px] flex-col gap-1.5">
             <p className="text-[32px] font-bold tracking-[-0.64px] text-fica-text">Designer</p>
-            <p className="text-2xl tracking-[-0.48px] text-fica-muted">{name}</p>
+            <p className="text-[20px] tracking-[-0.48px] text-fica-muted">{name}</p>
           </div>
         ))}
       </div>
