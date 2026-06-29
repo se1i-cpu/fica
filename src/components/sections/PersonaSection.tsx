@@ -42,8 +42,8 @@ type PersonaCardProps = {
 
 function PersonaCard({ name, age, role, photo, quote, painPoints, needs }: PersonaCardProps) {
   return (
-    <article className="rounded-[30px] bg-[#141414] pt-[48px] pb-[74px] px-[34px]">
-      <div className="mb-10 flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
+    <article className="flex h-full flex-col rounded-[30px] bg-[#141414] px-[34px] pt-[48px] pb-[48px]">
+      <div className="mb:justify-between mb-auto flex flex-col gap:justify-between sm:flex-row sm:items-start sm:justify-between">
         <div className="size-[190px] shrink-0 overflow-hidden rounded-full bg-fica-dark">
           <img src={photo} alt="" className="size-full object-cover" />
         </div>
@@ -56,7 +56,7 @@ function PersonaCard({ name, age, role, photo, quote, painPoints, needs }: Perso
           <p className="text-[16px] leading-[1.6] text-fica-muted">{quote}</p>
         </div>
       </div>
-      <div className="mb-4">
+      <div className="mt-8 mb-4">
         <p className="mb-2 px-2 text-lg font-bold text-fica-text">Pain Point</p>
         <div className="rounded-[15px] bg-[#1d1d1d] px-[28px] py-6 text-[16px] leading-[1.43] text-fica-text">
           {painPoints.map((point) => (
@@ -64,7 +64,7 @@ function PersonaCard({ name, age, role, photo, quote, painPoints, needs }: Perso
           ))}
         </div>
       </div>
-      <div>
+      <div className="mb-0">
         <p className="mb-2 px-2 text-lg font-bold text-fica-yellow">Needs</p>
         <div className="rounded-[15px] bg-fica-yellow px-[28px] py-6 text-[16px] font-semibold leading-[1.43] text-fica-dark">
           {needs.map((need) => (
