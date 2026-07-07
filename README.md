@@ -1,73 +1,46 @@
-# React + TypeScript + Vite
+# FICA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FICA (Firefighter Care) is an AI-assisted platform designed to support firefighters throughout field operations, recovery, and daily workflows.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+FICA provides:
 
-## React Compiler
+- Real-time operational information support
+- AI-assisted report generation
+- Workflow and information management tools
+- Firefighter-centered UX design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Vercel
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Live Demo
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+https://your-vercel-url.vercel.app
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Project Goal
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+FICA aims to reduce administrative workload and improve access to critical information for firefighters through AI-powered assistance and intuitive user experiences.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Future Plans
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+The project will continue to evolve beyond a prototype into a more comprehensive AI-powered firefighter support platform. Future development goals include:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Integration of speech-to-text technology for field communication logs
+- Automated incident report generation using AI
+- Real-time information summarization and decision support
+- AR-based visualization for operational awareness
+- Personalized recovery and wellness assistance for firefighters
+- User testing and validation with real-world emergency response workflows
+- Expansion toward a complete firefighter-centered AI ecosystem
+
+## Author
+
+Se1i (se1i-cpu)
+
+FICA is being developed as a long-term project exploring how AI can improve firefighter safety, reduce administrative burden, and enhance access to critical operational information. The ultimate goal is to create an integrated AI partner that supports firefighters before, during, and after emergency response activities.
